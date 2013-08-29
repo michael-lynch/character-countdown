@@ -2,6 +2,8 @@
 
 A simple, lightweight jQuery plugin to display a countdown of the remaining characters eligible in a textarea.
 
+<a href="http://michael-lynch.github.io/character-countdown/" target="_blank">See a demo</a>
+
 ##Instructions
 
 Include jQuery and the plugin in the head or footer of your page. 
