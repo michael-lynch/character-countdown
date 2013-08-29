@@ -21,6 +21,10 @@ Create a textarea and a div or span with an ID to display the countdown.
 Initialize the plugin targeting the class or ID of the textarea or the textarea itself.
 
 	$('textarea').characterCountdown();
+	
+When the countdown has reached it's limit, the class "max" will be added to the countdown element so you can style the countdown any way you'd like.
+
+	<div id="countdown" class="max"></div>
 
 ####Options
 
