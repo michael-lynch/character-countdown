@@ -21,7 +21,7 @@ Licensed under the MIT license
 
 		//define default parameters
         var defaults = {
-        	countdownTarget: 'countdown',
+        	countdownTarget: '.countdown',
         	maxChars: 140
         }
 
@@ -48,15 +48,15 @@ Licensed under the MIT license
         	//if remaining characters is greater than -1
         	if(remainingCharacters > 0) {
         	
-        		$('#'+plugin.settings.countdownTarget).removeClass('max');
+        		el.siblings(plugin.settings.countdownTarget).removeClass('max');
         
 	        	//set the number of remaining characters
-        		$('#'+plugin.settings.countdownTarget).text(remainingCharacters);
+        		el.siblings(plugin.settings.countdownTarget).text(remainingCharacters);
         	
         	} else {
         	
         		//set remaining characters to 0 and color them red
-        		$('#'+plugin.settings.countdownTarget).text(0).addClass('max');
+        		el.siblings(plugin.settings.countdownTarget).text(0).addClass('max');
 	        	
         	}
 	        

@@ -12,11 +12,11 @@ Include jQuery and the plugin in the head or footer of your page.
     
     <script src="/js/plugins/characterCountdown.js"></script>
     
-Create a textarea and a div or span with an ID to display the countdown.
+Create a textarea and a sibling element with the class of "countdown."
 
     <textarea></textarea>
     
-    <div id="countdown"></div>
+    <div class="countdown"></div>
 	
 Initialize the plugin targeting the class or ID of the textarea or the textarea itself.
 
@@ -24,14 +24,14 @@ Initialize the plugin targeting the class or ID of the textarea or the textarea 
 	
 When the countdown has reached it's limit, the class "max" will be added to the countdown element so you can style the countdown any way you'd like.
 
-	<div id="countdown" class="max"></div>
+	<div class="countdown max"></div>
 
 ####Options
 
 <ol>
 
-<li>countdownTarget: "id"
-<br />A string that defines the ID of the element that will display the countdown (default: 'countdown').
+<li>countdownTarget: "id / class / element"
+<br />A string that defines the class, ID or element that will display the countdown (default: '.countdown').
 </li>
 
 <li>maxChars: value
@@ -45,7 +45,7 @@ When the countdown has reached it's limit, the class "max" will be added to the 
 	$(function() {
 	
 		$('textarea').characterCountdown({
-			countdownTarget: 'my-countdown',
+			countdownTarget: '.my-countdown',
 			maxChars: 300
 		});
 	
