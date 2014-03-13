@@ -1,0 +1,26 @@
+{
+  "name": "character-countdown",
+  "version": "1.0.0",
+  "homepage": "https://github.com/michael-lynch/character-countdown",
+  "authors": [
+    "Michael Lynch <michael@teehanlax.com>"
+  ],
+  "description": "A simple, lightweight jQuery plugin to display a countdown of the remaining characters eligible in an input or textarea.",
+  "main": "build/characterCountdown.min.js",
+  "keywords": [
+    "character",
+    "countdown",
+    "max",
+    "maximum",
+    "eligible",
+    "twitter"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
