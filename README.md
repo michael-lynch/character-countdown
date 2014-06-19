@@ -8,23 +8,31 @@ A simple, lightweight jQuery plugin to display a countdown of the remaining char
 
 Include jQuery and the plugin in the head or footer of your page. 
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
-    <script src="/js/plugins/characterCountdown.js"></script>
+```html
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="/js/plugins/characterCountdown.js"></script>
+```
     
 Create a textarea and a sibling element with the class of "countdown."
 
-    <textarea></textarea>
-    
-    <div class="countdown"></div>
+```html
+<textarea></textarea>
+
+<div class="countdown"></div>
+```
 	
 Initialize the plugin targeting the class or ID of the textarea or the textarea itself.
 
-	$('textarea').characterCountdown();
+```js
+$('textarea').characterCountdown();
+```
 	
 When the countdown has reached it's limit, the class "max" will be added to the countdown element so you can style the countdown any way you'd like.
 
-	<div class="countdown max"></div>
+```html
+<div class="countdown max"></div>
+```
 
 ####Options
 
@@ -42,11 +50,13 @@ When the countdown has reached it's limit, the class "max" will be added to the 
 
 #####Example
 
-	$(function() {
-	
-		$('textarea').characterCountdown({
-			countdownTarget: '.my-countdown',
-			maxChars: 300
-		});
-	
+```js
+$(function() {
+
+	$('textarea').characterCountdown({
+		countdownTarget: '.my-countdown',
+		maxChars: 300
 	});
+
+});
+```
